@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".LondonCulture"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:layout_alignParentLeft="true"
+        android:onClick="returnToHome"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Event List"
+        android:onClick="returnToEventList"
+        />
+</RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:text="London Culture"
+    android:textSize="30dp"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Date: 14/06/2023"
+    android:textSize="22dp"
+    android:textColor="@color/black"
+    />
+
+<TextView
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Time: 4pm"
+    android:textSize="22dp"
+    android:textColor="@color/black"
+
+    />
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Address: 44 Croydon Road, BR33BJ"
+    android:textSize="22dp"
+    android:textColor="@color/black"
+    />
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Price: Free"
+    android:textSize="22dp"
+    android:textColor="@color/black"
+    />
+<TextView
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Description"
+    android:textSize="22dp"
+    android:textColor="@color/black"
+    />
+
+
+<TextView
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="19dp"
+    android:textColor="@color/black"
+    android:inputType="textMultiLine"
+    android:text="Pick from a huge list of activities taking place in Croydon during the full-year programme for The Mayor’s London Borough of Culture 2023. Enjoy a fantastic line-up of flagship events, including storytelling, live music and performances around this south London neighbourhood."
+    android:scrollbars="vertical" />
+
+<Button
+    android:layout_marginTop="55dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Book Event"
+    android:layout_alignParentLeft="true"
+    android:onClick="bookEvent"
+    />
+</LinearLayout>

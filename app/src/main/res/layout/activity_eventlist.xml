@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Eventlist">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:onClick="homeButton"
+            android:text="Home" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="List of incoming Evens"
+        android:gravity="center"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+       >
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/teamBuildingsbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Building"
+            android:layout_marginRight="10dp"
+            android:onClick="teamBuildingButton"
+            />
+
+        <Button
+            android:id="@+id/gadElmalehButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/teamBuildingsbutton"
+            android:onClick="gadElmaleh"
+            android:text="Gad Elmaleh" />
+        <Button
+            android:id="@+id/champoinbutton"
+            android:layout_below="@id/teamBuildingsbutton"
+            android:layout_margin="10dp"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:text="Champoin"
+            android:layout_marginRight="10dp"
+            android:onClick="champoin"
+            />
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/laughterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="London Culture"
+            android:layout_toRightOf="@id/champoinbutton"
+            android:onClick="londonCulture"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/gadElmalehButton"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_alignParentLeft="true"
+            android:onClick="returnToHome"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Event List"
+            android:onClick="returnToEventList"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Gad Elmaleh"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: 22/05/2023"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time: 7pm"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address: 4 Tufnel Park Rd, N7 0PG"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: £25"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        android:text="Gad Elmaleh is  stand-up comedian and actor who achieved fame in France, Morocco and the United States. H. He has starred in several feature films, including Coco, Priceless. Voted the funniest person in France, he was named knight of the Order of Arts and Letters by the Minister of Culture; he was also named knight of the National Order of Quebec. "
+        android:scrollbars="vertical" />
+
+    <Button
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Event"
+        android:layout_alignParentLeft="true"
+        android:onClick="bookEvent"
+        />
+</LinearLayout>
